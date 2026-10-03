@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Forge",
+  "version": "0.1.0",
+  "identifier": "com.forge.ide",
+  "build": {
+    "beforeDevCommand": "cd ../web && npm run dev -- --hostname 127.0.0.1 --port 3000",
+    "devUrl": "http://127.0.0.1:3000",
+    "beforeBuildCommand": "cd ../web && npm run build",
+    "frontendDist": "../web/out"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Forge",
+        "width": 1440,
+        "height": 920,
+        "minWidth": 1100,
+        "minHeight": 720
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["msi", "dmg", "appimage", "deb"],
+    "icon": []
+  }
+}

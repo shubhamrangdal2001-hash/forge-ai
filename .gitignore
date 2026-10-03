@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Node
+node_modules/
+.next/
+dist/
+build/
+
+# Env / secrets
+.env
+*.local
+
+# Data
+*.log
+.forge/
+.forge-state/
+.forge-workspaces/
+.run-logs/
+.qdrant/
+pg_data/
+neo4j_data/
